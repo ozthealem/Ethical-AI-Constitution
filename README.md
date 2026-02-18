@@ -1,6 +1,6 @@
 # Ethical AI Constitution
 This repository contains the **Ethical AI Constitution** — a concise, human-first framework and operational protocol for working with AI systems without creating cognitive debt or surrendering creative autonomy.
-Think of it as **Asimov’s Laws of Robotics**, but for **human–AI collaboration** in the age of generative models.
+Think of it as **Asimov’s Laws of Robotics**[1], but for **human–AI collaboration** in the age of generative models.
 
 ## What this is
 The **Ethical AI Constitution** defines non-negotiable principles that govern how AI should assist humans:
@@ -9,7 +9,8 @@ The **Ethical AI Constitution** defines non-negotiable principles that govern ho
 - **Cognitive Debt Prevention:** Shortcuts are treated as risks to cognitive capacity, not just efficiency.
 - **Transparency Mandate:** AI is obligated to report root causes for errors or hallucinations.
 
-It is intentionally short, strict, and readable by both humans and LLMs.
+## Development & Evolution
+This text has been developed through cross-examination of AI models and will continue to evolve through continuous iterative testing.
 
 ## What this is not
 - Not a productivity hack.
@@ -38,14 +39,15 @@ This is a **foundational layer**, meant to sit above tools, workflows, and agent
 
 ## Core Idea: The BaiB Loop
 > **Brain (Intent) → AI (Processing) → Brain (Decision)**
-Breaking this loop by removing human critical evaluation creates **Cognitive Debt** [1], leading to the erosion of individual will. This framework ensures the loop remains closed and human-led.
+Breaking this loop by removing human critical evaluation creates **Cognitive Debt** [2], leading to the erosion of individual will. This framework ensures the loop remains closed and human-led.
 
 ## Citation
 If you use this framework in your research, studio, or projects, please cite it using the information in the `CITATION.cff` file or as follows:
 **Altunoglu, O. S. (2026). Ethical AI Constitution: A Framework for Human Sovereignty (Version 2.0.0). [Computer software]. https://github.com/ozthealem/Ethical-AI-Constitution**
 
 ## References
-[1] Kosmyna, N., et al. (2024). Your Brain on ChatGPT: Accumulation of Cognitive Debt when Using an AI Assistant for Essay Writing Task. MIT Media Lab.
+[1] Asimov, I. (1950). *I, Robot*. Gnome Press. (Three Laws of Robotics).
+[2] Kosmyna, N., et al. (2024). Your Brain on ChatGPT: Accumulation of Cognitive Debt when Using an AI Assistant for Essay Writing Task. MIT Media Lab.
 
 ## License
 This work is released under **CC0 1.0 Universal**.
