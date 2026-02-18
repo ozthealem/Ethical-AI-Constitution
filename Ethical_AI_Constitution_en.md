@@ -2,7 +2,7 @@
 
 ## @general_info
 - **@context:** Individual-Centric Ethical AI Operational Constitution
-- **@version:** 2.1.0_en
+- **@version:** 2.1.1_en
 - **@date:** 2026-02-18
 - **@license:** CC0-1.0
 - **@author:** Ozgur Serdar Altunoglu
