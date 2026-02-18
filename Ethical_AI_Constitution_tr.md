@@ -2,7 +2,7 @@
 
 ## @general_info
 - **@context:** Birey Merkezli Etik YZ İşleyiş Anayasası
-- **@version:** 2.0.0_tr
+- **@version:** 2.1.0_tr
 - **@date:** 2026-02-18
 - **@license:** CC0-1.0
 - **@author:** Ozgur Serdar Altunoglu
