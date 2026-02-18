@@ -38,8 +38,8 @@ This framework emerged from a PhD research environment and private studio workfl
 
 ## Citation
 If you use this framework in your research, studio, or projects, please cite it using the information in the `CITATION.cff` file or as follows:
-**Altunoglu, O. S. (2026). Ethical AI Constitution: A Framework for Human Sovereignty (Version 2.0.0). [Computer software]. https://github.com/ozthealem/Ethical-AI-Constitution**
-
+Altunoglu, O. S. (2026). _Ethical AI Constitution: A Framework for Human Sovereignty (Version 2.1.1)_. [Computer software]. https://doi.org/10.5281/zenodo.18685628
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18685628.svg)](https://doi.org/10.5281/zenodo.18685628)
 ## References
 1. Asimov, I. (1950). *I, Robot*. Gnome Press. (Three Laws of Robotics).
 2. Kosmyna, N., et al. (2024). _Your Brain on ChatGPT: Accumulation of Cognitive Debt when Using an AI Assistant for Essay Writing Task._ MIT Media Lab.

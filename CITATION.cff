@@ -1,24 +1,22 @@
 cff-version: 1.2.0
-title: "Ethical AI Constitution"
-message: "If you use this framework in academic work, please cite it as below."
-type: software
+message: "If you use this framework, please cite it using these metadata."
 authors:
   - family-names: "Altunoglu"
-    given-names: "Ozgur Serdar"
-    orcid: "https://orcid.org/0000-0001-9457-0036"
-version: "2.0.0"
+    given-names: "O. S."
+title: "Ethical AI Constitution: A Framework for Human Sovereignty"
+version: 2.1.1
+doi: 10.5281/zenodo.18685628
 date-released: 2026-02-18
-license: "CC0-1.0"
-repository-code: "https://github.com/ozthealem/AI-Context-Constitution"
-abstract: >
-  The Ethical AI Constitution is a human-centered framework defining
-  cognitive responsibility, Brain-AI-Brain (BaiB) workflow integrity,
-  open-source preference, and privacy-preserving AI usage principles.
+url: "https://github.com/ozthealem/Ethical-AI-Constitution"
+repository-code: "https://github.com/ozthealem/Ethical-AI-Constitution"
 keywords:
+  - AI Ethics
+  - Human Sovereignty
+  - Cognitive Debt
+  - AI Manifesto
   - artificial intelligence
-  - cognitive debt
   - human-centered AI
-  - AI ethics
   - workflow governance
   - BaiB
   - cognitive sovereignty
+license: MIT
