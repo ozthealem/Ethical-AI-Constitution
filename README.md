@@ -1,5 +1,9 @@
 # Ethical AI Constitution
 This repository contains the **Ethical AI Constitution** — a concise, human-first framework and operational protocol for working with AI systems without creating cognitive debt or surrendering creative autonomy. Think of it as **Asimov’s Laws of Robotics**[1], but for **human–AI collaboration** in the age of generative models.
+
+**[ 📜 Read in English ](./Ethical_AI_Constitution_v2.0.0_en.md) | [ 📜 Türkçe Oku ](./Ethical_AI_Constitution_v2.0.0_tr.md)**
+
+---
 ## What this is
 The **Ethical AI Constitution** defines non-negotiable principles that govern how AI should assist humans:
 - **Human Sovereignty:** AI accelerates thinking; it does not replace it.
