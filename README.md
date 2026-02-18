@@ -1,83 +1,55 @@
-# AI Context Constitution
-
-This repository contains a **general-purpose AI Context Constitution** — a concise, human-first framework for working with AI systems without creating cognitive debt or surrendering creative autonomy.
-
-Think of it as **Asimov’s Laws of Robotics**, but for **human–AI collaboration**.
-
----
+# Ethical AI Constitution
+This repository contains the **Ethical AI Constitution** — a concise, human-first framework and operational protocol for working with AI systems without creating cognitive debt or surrendering creative autonomy.
+Think of it as **Asimov’s Laws of Robotics**, but for **human–AI collaboration** in the age of generative models.
 
 ## What this is
-
-The **AI Context Constitution** defines non-negotiable principles that govern how AI should assist humans:
-- AI accelerates thinking, it does not replace it
-- Human intent always comes first
-- Cognitive shortcuts are treated as risk, not efficiency
+The **Ethical AI Constitution** defines non-negotiable principles that govern how AI should assist humans:
+- **Human Sovereignty:** AI accelerates thinking; it does not replace it.
+- **Brain-AI-Brain (BaiB):** Human intent initiates, AI executes, and human judgment closes the loop.
+- **Cognitive Debt Prevention:** Shortcuts are treated as risks to cognitive capacity, not just efficiency.
+- **Transparency Mandate:** AI is obligated to report root causes for errors or hallucinations.
 
 It is intentionally short, strict, and readable by both humans and LLMs.
 
----
-
 ## What this is not
+- Not a productivity hack.
+- Not an AI prompt collection.
+- Not a corporate ethics document.
+- Not model-specific.
 
-- Not a productivity hack
-- Not an AI prompt collection
-- Not a corporate ethics document
-- Not model-specific
-
-This is a **foundational layer**, meant to sit above tools, workflows, and agents.
-
----
+This is a **foundational layer**, meant to sit above tools, workflows, and agents to protect the individual against technocratic hegemony.
 
 ## Structure of this repository
-
-```
+```text
 /
-├─ AI_Context_Constitution.md   # The General Constitution (core laws)
-├─ README.md                   # This file
-├─ /variants                    # Domain-specific adaptations (optional)
-│   ├─ developer.md
-│   └─ artist.md
-├─ /docs                        # Explanations and rationale
-│   ├─ cognitive-debt.md
-│   └─ design-rationale.md
+├── Ethical_AI_Constitution_v2.0.0_en.md   # Core Constitution (English)
+├── Ethical_AI_Constitution_v2.0.0_tr.md   # Core Constitution (Turkish)
+├── CITATION.cff                           # Academic citation metadata
+└── README.md                              # This file
 ```
-
-- **AI_Context_Constitution.md** is the only normative document
-- Everything else is explanatory or adaptive
-
----
+- **Ethical_AI_Constitution.md** is the normative document to be used as system pre-context.
+- **CITATION.cff** allows researchers and developers to cite this framework in academic works.
 
 ## How to use
+1. **Read:** Understand the Constitution and its implications on cognitive sovereignty.
+2. **Inject:** Use the content of the `.md` files as a *system prompt* or *pre-context* for AI tools (ChatGPT, Claude, local LLMs).
+3. **Verify:** Use the **Transparency Mandate** to force AI to explain its internal logic during errors.
+4. **Adapt:** Fork and adapt for specific domains (Artist, Developer, Researcher).
 
-1. Read the Constitution fully
-2. Apply it as a *pre-context* for AI tools or agents
-3. Fork and adapt for your own domain (developer, artist, studio, etc.)
-4. Do not expand the Constitution — create variants instead
+## Core Idea: The BaiB Loop
+> **Brain (Intent) → AI (Processing) → Brain (Decision)**
+Breaking this loop by removing human critical evaluation creates **Cognitive Debt** [1], leading to the erosion of individual will. This framework ensures the loop remains closed and human-led.
 
----
+## Citation
+If you use this framework in your research, studio, or projects, please cite it using the information in the `CITATION.cff` file or as follows:
+**Altunoglu, O. S. (2026). Ethical AI Constitution: A Framework for Human Sovereignty (Version 2.0.0). [Computer software]. https://github.com/ozthealem/Ethical-AI-Constitution**
 
-## Core idea
-
-> **Brain → AI → Brain**
-
-Human intent initiates.
-AI executes.
-Human judgment closes the loop.
-
-Breaking this loop creates **Cognitive Debt**.
-
----
+## References
+[1] Kosmyna, N., et al. (2024). Your Brain on ChatGPT: Accumulation of Cognitive Debt when Using an AI Assistant for Essay Writing Task. MIT Media Lab.
 
 ## License
-
 This work is released under **CC0 1.0 Universal**.
+You are encouraged to use, adapt, extend, and fork this framework for any personal, professional, or commercial needs.
 
-You are encouraged to use, adapt, extend, fork, and apply this framework to your own needs — personal, professional, or commercial.
-
----
-
-## Origin note
-
-This framework is adapted from a real, private studio workflow and generalized for public use.
-Names, tools, and identities have been removed to keep it universal.
-
+## Origin Note
+This framework emerged from a PhD research environment and private studio workflow (Cezvi Studio). It has been generalized to serve the global community of creators and researchers.
