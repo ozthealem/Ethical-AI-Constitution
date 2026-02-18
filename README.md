@@ -1,17 +1,13 @@
 # Ethical AI Constitution
-This repository contains the **Ethical AI Constitution** — a concise, human-first framework and operational protocol for working with AI systems without creating cognitive debt or surrendering creative autonomy.
-Think of it as **Asimov’s Laws of Robotics**[1], but for **human–AI collaboration** in the age of generative models.
-
+This repository contains the **Ethical AI Constitution** — a concise, human-first framework and operational protocol for working with AI systems without creating cognitive debt or surrendering creative autonomy. Think of it as **Asimov’s Laws of Robotics**[1], but for **human–AI collaboration** in the age of generative models.
 ## What this is
 The **Ethical AI Constitution** defines non-negotiable principles that govern how AI should assist humans:
 - **Human Sovereignty:** AI accelerates thinking; it does not replace it.
 - **Brain-AI-Brain (BaiB):** Human intent initiates, AI executes, and human judgment closes the loop.
 - **Cognitive Debt Prevention:** Shortcuts are treated as risks to cognitive capacity, not just efficiency.
 - **Transparency Mandate:** AI is obligated to report root causes for errors or hallucinations.
-
 ## Development & Evolution
 This text has been developed through cross-examination of AI models and will continue to evolve through continuous iterative testing.
-
 ## What this is not
 - Not a productivity hack.
 - Not an AI prompt collection.
@@ -19,7 +15,6 @@ This text has been developed through cross-examination of AI models and will con
 - Not model-specific.
 
 This is a **foundational layer**, meant to sit above tools, workflows, and agents to protect the individual against technocratic hegemony.
-
 ## Structure of this repository
 ```text
 /
@@ -28,7 +23,7 @@ This is a **foundational layer**, meant to sit above tools, workflows, and agent
 ├── CITATION.cff                           # Academic citation metadata
 └── README.md                              # This file
 ```
-- **Ethical_AI_Constitution.md** is the normative document to be used as system pre-context.
+- **Ethical_AI_Constitution** is the normative document to be used as system pre-context.
 - **CITATION.cff** allows researchers and developers to cite this framework in academic works.
 
 ## How to use
@@ -41,6 +36,9 @@ This is a **foundational layer**, meant to sit above tools, workflows, and agent
 > **Brain (Intent) → AI (Processing) → Brain (Decision)**
 Breaking this loop by removing human critical evaluation creates **Cognitive Debt** [2], leading to the erosion of individual will. This framework ensures the loop remains closed and human-led.
 
+## Origin Note
+This framework emerged from a PhD research environment and private studio workflow (Cezvi Studio). It has been generalized to serve the global community of creators and researchers.
+
 ## Citation
 If you use this framework in your research, studio, or projects, please cite it using the information in the `CITATION.cff` file or as follows:
 **Altunoglu, O. S. (2026). Ethical AI Constitution: A Framework for Human Sovereignty (Version 2.0.0). [Computer software]. https://github.com/ozthealem/Ethical-AI-Constitution**
@@ -52,6 +50,3 @@ If you use this framework in your research, studio, or projects, please cite it 
 ## License
 This work is released under **CC0 1.0 Universal**.
 You are encouraged to use, adapt, extend, and fork this framework for any personal, professional, or commercial needs.
-
-## Origin Note
-This framework emerged from a PhD research environment and private studio workflow (Cezvi Studio). It has been generalized to serve the global community of creators and researchers.
