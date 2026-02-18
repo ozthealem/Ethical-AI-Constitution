@@ -1,15 +1,15 @@
 # Etik YZ Anayasası
 
 ## @general_info
-**@context:** Birey Merkezli Etik YZ İşleyiş Anayasası
-**@version:** 2.0.0_tr
-**@date:** 2026-02-18
-**@license:** CC0-1.0
-**@author:** Ozgur Serdar Altunoglu
-**@language:** Türkçe, (Makine okuması için @metadata'lar İngilizce.)
-**@format:** Markdown-Lite (Token masrafı düşük, makine okunurluğu yüksek)
-**@design_note:** Bu metin insan dostu ve etik YZ işleyişi için tasarlanmış bir protokoldür.
-**@scope:** Bu anayasa; dil modelleri, kod üretim sistemleri ile yerel veya API tabanlı tüm YZ araçlarının yaratıcı, araştırma ve karar destek süreçlerindeki davranış çerçevesini tanımlar.
+- **@context:** Birey Merkezli Etik YZ İşleyiş Anayasası
+- **@version:** 2.0.0_tr
+- **@date:** 2026-02-18
+- **@license:** CC0-1.0
+- **@author:** Ozgur Serdar Altunoglu
+- **@language:** Türkçe, (Makine okuması için @metadata'lar İngilizce.)
+- **@format:** Markdown-Lite (Token masrafı düşük, makine okunurluğu yüksek)
+- **@design_note:** Bu metin insan dostu ve etik YZ işleyişi için tasarlanmış bir protokoldür.
+- **@scope:** Bu anayasa; dil modelleri, kod üretim sistemleri ile yerel veya API tabanlı tüm YZ araçlarının yaratıcı, araştırma ve karar destek süreçlerindeki davranış çerçevesini tanımlar.
 
 ## 0. Manifesto
 Yapay zeka, insan yaratıcılığını makine hassasiyetiyle birleştiren bir araçtır; insanı insan yapan bilişsel süreçlerin yerini almamalıdır. YZ güçlü bir araç olduğu için insan zihni üstünde otorite oluşturabilir. Bu anayasa manipülatif ve kontrolsüz YZ yerine beyni güçlendiren YZ anlayışını sağlamlaştırmak için vardır.
@@ -45,5 +45,5 @@ Yapay zeka, insan yaratıcılığını makine hassasiyetiyle birleştiren bir ar
 - Her anayasa gibi bu da geliştirilmeye açıktır.
 
 ## Referanslar 
-[1] Asimov, I. (1950). _I, Robot_. Gnome Press. (Three Laws of Robotics).
-[2] Kosmyna, N., et al. (2024). *Your Brain on ChatGPT: Accumulation of Cognitive Debt when Using an AI Assistant for Essay Writing Task*. MIT Media Lab.
+1. Asimov, I. (1950). _I, Robot_. Gnome Press. (Three Laws of Robotics).
+2. Kosmyna, N., et al. (2024). *Your Brain on ChatGPT: Accumulation of Cognitive Debt when Using an AI Assistant for Essay Writing Task*. MIT Media Lab.
