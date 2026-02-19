@@ -1,7 +1,13 @@
-All notable changes to this project will be documented in this file.
-The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
-and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
-
+## [2.2.0] - 2026-02-19
+### Added
+- Security & Privacy (Leakage Audit): A new dynamic protection layer designed to prevent the unauthorized disclosure of sensitive data during active operations. 
+- A new Layer: Master Prompt (Personal Data Hub) Integration: The core architectural shift connecting universal ethics to private operational context.
+- Error Protocol Mandate: A critical addition to the Constitution (Layer 1) requiring AI to provide root-cause analysis for failures and hallucinations.
+- Bilingual Templates: Public release of Master_Prompt_Template_en/tr for global and local usage.
+### Changed
+- Operational Architecture: Formal separation of Layer 1 (Constitution) and Layer 2 (Hub).
+- Filename Standardization: Removed version suffixes from titles to ensure persistent documentation links.
+- Visual Noise Reduction: Removed unnecessary bolding and symbols across all documents for "jilet" readability.
 ---
 ## [2.1.1] - 2026-02-18
 ### Added
@@ -18,7 +24,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Philosophical pivot: Reframed the core conflict from "Human vs. Robot" to "Individual Sovereignty vs. AI Corporate Interests."
 - Quick-access navigation: Direct links to EN and TR versions at the top of README.
 - Loyalty Mandate: Explicit protection of the individual user against corporate algorithmic biases.
-
 ### Changed
 - UI Refinement: Replaced stylistic em-dashes (—) with colons (:) for a minimalist, authoritative layout.
 - Version Sync: All core documents (EN/TR) synchronized to v2.1.0 for terminological alignment.
