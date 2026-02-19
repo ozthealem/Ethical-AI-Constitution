@@ -1,3 +1,19 @@
+All notable changes to this project will be documented in this file.
+## [2.2.1] - 2026-02-19
+
+### Added
+- YAML Frontmatter metadata blocks to all `.md` files (L1 and L2).
+- `lang` metadata key for explicit language definition.
+- Support for persistent Concept DOI (`10.5281/zenodo.18685627`).
+### Changed
+- Standardized version numbers across all layers to `2.2.1`.
+- Updated `CITATION.cff` to reflect the latest release date and version.
+- Re-structured `Master_Prompt_Template` to function as a formal operational framework rather than a simple instruction set.
+- Refined the "Scope" and "Manifesto" sections for better clarity in both English and Turkish versions.
+### Fixed
+- Fixed broken internal DOI references.
+- Removed redundant metadata from the document body to reduce token overhead and improve AI focus.
+---
 ## [2.2.0] - 2026-02-19
 ### Added
 - Security & Privacy (Leakage Audit): A new dynamic protection layer designed to prevent the unauthorized disclosure of sensitive data during active operations. 
