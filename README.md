@@ -13,10 +13,10 @@ The **Ethical AI Constitution** defines non-negotiable principles that govern ho
 
 ## Operational Architecture: The Two-Layer System
 To achieve maximum efficiency and sovereignty, this framework operates on a dual-layer structure:
-1.  **Layer 1: The Constitution (Universal):** This is the foundation. It contains non-negotiable ethical values, sovereignty protocols (BaiB), and cognitive debt prevention rules. It defines the principles and boundaries of the AI. It is public, universal, and contains no personal data.
-2.  **Layer 2: The Master Prompt (Personal):** This is your **private data pool**. It contains your hardware specs, private mission lists, and specific workflow preferences. It is the operational skin that transforms the AI into your specialized partner.
+1. **Layer 1: The Constitution (Universal):** This is the foundation. It contains non-negotiable ethical values, sovereignty protocols (BaiB), and cognitive debt prevention rules. It defines the principles and boundaries of the AI. It is public, universal, and contains no personal data.
+2. **Layer 2: The Master Prompt (Personal):** This is your personal working context. Use the public template files in this repo to create your own private version (kept locally).
 
-By combining these two layers, you transform a generic AI into a high-performance, specialized "Best Friend/Worker/Peer/Teacher etc." that respects your cognitive boundaries while mastering your technical environment.
+By combining these two layers, you transform a generic AI into a high-performance, specialized AI partner (friend, worker, peer, teacher, etc.) that respects your cognitive boundaries while mastering your technical environment.
 
 ## How to Use
 You will notice the impact immediately after integrating the **Constitution** and your personalized **Master Prompt** into your AI's context files. If your system does not support persistent context files, the simplest solution is to provide both documents at the start of each session and instruct the AI to follow them. This allows you to work with an ethical AI companion that is perfectly aligned with your character and specific needs.
@@ -38,8 +38,8 @@ This framework emerged from a PhD research environment and private studio workfl
 
 ## Citation
 If you use this framework in your research, studio, or projects, please cite it using the information in the `CITATION.cff` file or as follows:
-Altunoglu, O. S. (2026). _Ethical AI Constitution: A Framework for Human Sovereignty (Version 2.2.0)_. [Computer software]. https://doi.org/10.5281/zenodo.18685628
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18685628.svg)](https://doi.org/10.5281/zenodo.18685628)
+- Altunoglu, O. S. (2026). _Ethical AI Constitution: A Framework for Human Sovereignty (Version 2.2.1)_. [Computer software]. https://doi.org/10.5281/zenodo.18685627
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18685627.svg)](https://doi.org/10.5281/zenodo.18685627)
 ## References
 1. Asimov, I. (1950). *I, Robot*. Gnome Press. (Three Laws of Robotics).
 2. Kosmyna, N., et al. (2024). _Your Brain on ChatGPT: Accumulation of Cognitive Debt when Using an AI Assistant for Essay Writing Task._ MIT Media Lab.
