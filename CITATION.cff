@@ -4,9 +4,9 @@ authors:
   - family-names: "Altunoglu"
     given-names: "O. S."
 title: "Ethical AI Constitution: A Framework for Human Sovereignty"
-version: 2.1.1
+version: 2.2.0
 doi: 10.5281/zenodo.18685628
-date-released: 2026-02-18
+date-released: 2026-02-19
 url: "https://github.com/ozthealem/Ethical-AI-Constitution"
 repository-code: "https://github.com/ozthealem/Ethical-AI-Constitution"
 keywords:
@@ -19,4 +19,4 @@ keywords:
   - workflow governance
   - BaiB
   - cognitive sovereignty
-license: MIT
+license: CC0-1.0
