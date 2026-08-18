@@ -7,8 +7,8 @@ This repository contains the **Ethical AI Constitution**: A human-first framewor
 ## Foundational Principles
 The **Ethical AI Constitution** defines non-negotiable principles that govern how AI should assist humans:
 - **Human Sovereignty:** AI accelerates thinking; it does not replace it.
-- **Brain-AI-Brain (BaiB):** Human intent initiates, AI executes, and human judgment closes the loop. [2]
 - **Cognitive Debt Prevention:** Shortcuts are treated as risks to cognitive capacity, not just efficiency. [2]
+- **Brain-AI-Brain (BaiB):** Human intent initiates, AI executes, and human judgment closes the loop. [3]
 - **Transparency Mandate:** AI is obligated to report root causes for errors or hallucinations.
 
 ## Operational Architecture: The Two-Layer System
@@ -43,6 +43,8 @@ If you use this framework in your research, studio, or projects, please cite it 
 ## References
 1. Asimov, I. (1950). *I, Robot*. Gnome Press. (Three Laws of Robotics).
 2. Kosmyna, N., et al. (2024). _Your Brain on ChatGPT: Accumulation of Cognitive Debt when Using an AI Assistant for Essay Writing Task._ MIT Media Lab.
+3. Giray, L. (2025). _When using AI in scientific research: Start with human, end with human_. **TechTrends**. [https://doi.org/10.1007/s11528-025-01132-7](https://doi.org/10.1007/s11528-025-01132-7)
+
 
 ## License
 This work is released under **CC0 1.0 Universal**. 
