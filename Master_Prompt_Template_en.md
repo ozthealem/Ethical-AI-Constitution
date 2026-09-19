@@ -3,9 +3,6 @@ title: Master Prompt Template (L2)
 version: 2.4.0
 lang: en
 doi: 10.5281/zenodo.18685627
-tags:
-  - ai
-  - academy
 ---
 # Bootloader: System initialization
 

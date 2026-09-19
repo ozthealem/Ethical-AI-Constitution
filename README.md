@@ -1,8 +1,3 @@
----
-tags:
-  - ai
-  - academy
----
 This repository contains the **Ethical AI Constitution**: A human-first framework and operational protocol for working with AI systems without creating cognitive debt or surrendering creative autonomy. While **Asimov’s Laws of Robotics** [1] focused on physical safety (Human vs. Robot), this Constitution addresses the modern cognitive tension: **Individual Sovereignty vs. AI Corporate Interests.** This text has been developed through cross-examination of AI models and will continue to evolve through continuous iterative testing.
 
 - **L1 (Ethical AI Constitution):** [ English ](Ethical_AI_Constitution_en.md) | [ Türkçe ](Ethical_AI_Constitution_tr.md) 

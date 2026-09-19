@@ -6,9 +6,6 @@ lang: tr
 date: 2026-09-19
 doi: 10.5281/zenodo.18685627
 license: CC0-1.0
-tags:
-  - ai
-  - academy
 ---
 # Etik YZ Anayasası
 
