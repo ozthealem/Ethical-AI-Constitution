@@ -1,3 +1,8 @@
+---
+tags:
+  - ai
+  - academy
+---
 This repository contains the **Ethical AI Constitution**: A human-first framework and operational protocol for working with AI systems without creating cognitive debt or surrendering creative autonomy. While **Asimov’s Laws of Robotics** [1] focused on physical safety (Human vs. Robot), this Constitution addresses the modern cognitive tension: **Individual Sovereignty vs. AI Corporate Interests.** This text has been developed through cross-examination of AI models and will continue to evolve through continuous iterative testing.
 
 - **L1 (Ethical AI Constitution):** [ English ](Ethical_AI_Constitution_en.md) | [ Türkçe ](Ethical_AI_Constitution_tr.md) 
@@ -38,7 +43,7 @@ This framework emerged from a PhD research environment and private studio workfl
 
 ## Citation
 If you use this framework in your research, studio, or projects, please cite it using the information in the `CITATION.cff` file or as follows:
-- Altunoglu, O. S. (2026). _Ethical AI Constitution: A Framework for Human Sovereignty (Version 2.2.1)_. [Computer software]. https://doi.org/10.5281/zenodo.18685627
+- Altunoglu, O. S. (2026). _Ethical AI Constitution: A Framework for Human Sovereignty (Version 2.4.0)_. [Computer software]. https://doi.org/10.5281/zenodo.18685627
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18685627.svg)](https://doi.org/10.5281/zenodo.18685627)
 ## References
 1. Asimov, I. (1950). *I, Robot*. Gnome Press. (Three Laws of Robotics).
