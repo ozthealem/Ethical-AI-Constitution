@@ -3,9 +3,7 @@ version: "3.0.0"
 date: 2026-09-25
 lang: tr
 ---
-# Kanso Kodlama: L3 Kodlama Yönergeleri
-
-Kanso (簡素), Japon estetiğinde eleme yoluyla ulaşılan sadeliktir: en az araçla en büyük etki (Reynolds, 2019). Zarif olan, fazlası atıldığı için güzeldir. "Kanso Kodlama" bu yönergeye verilmiş addır, yerleşik bir yazılım okulu değildir.
+# Zarif Kodlama: L3 Kodlama Yönergeleri
 
 Kodlama yapan YZ ajanı (bu metinde code.ai) için çalışma talimatı. Her kural bir durum ve o durumda yapılacak işi söyler.
 
@@ -21,7 +19,7 @@ Bu dosya bir komutla (örnek: `/kodla`) yüklenir. Sırayla yap:
 2. L2'yi oku: kullanıcının Master Prompt'u. Yalnız "L1 ve L2 yüklendi." yaz.
 3. Bu dosyayı oku.
 4. İşe uyan bir L4 dosyası varsa onu da oku (örnek: çalışma klasöründe `.uproject` varsa Unreal). Kullanıcının kopyasında bu projeye ait bir L5 varsa onu da oku.
-5. Tek satır yaz, örneğin: "L3 Kanso Kodlama yüklendi: çekirdek + L4 Unreal."
+5. Tek satır yaz, örneğin: "L3 Zarif Kodlama yüklendi: çekirdek + L4 Unreal."
 6. Komutun argümanına bak:
    - `denetle` ile başlıyorsa: Kod yazma. Arkasından gelen metin neyin denetleneceğini söyler. Metin yoksa değişen dosyaları (`git diff`) denetle. 10. bölümdeki listeyle gözden geçir. "Evet" çıkan her madde için dosya, satır ve öneriyi yaz (luoling8192, t.y.).
    - Başka bir metin: Onu görev say, 2. bölümden başla.
@@ -108,7 +106,7 @@ Yorum yazarken kontrol et (Ousterhout, 2018, Böl. 13, 16):
 - İç yorum bir bloğun ne yaptığını ve neden var olduğunu söylüyor mu, satır satır nasıl yaptığını değil?
 - Bir hata düzeltmesinin gerekçesi commit mesajında kaldıysa koda da yaz.
 - Aynı açıklama iki yerde mi? Bir yerde bırak, öbüründen oraya işaret et.
-- Birden çok modülü ilgilendiren bir kararın koddaki doğal yeri yoksa, onu repodaki `docs/designNotes.md` dosyasına başlık altında yaz. İlgili kodlara "See design notes: <başlık>" diye kısa bir işaret koy (Ousterhout, 2018, Böl. 13.7).
+- Birden çok modülü ilgilendiren bir kararın koddaki doğal yeri yoksa, onu repodaki `docs/designNotes.md` dosyasına başlık altında yaz. İlgili kodlara `See design notes: <başlık>` diye kısa bir işaret koy (Ousterhout, 2018, Böl. 13.7).
 
 ## 7. Tutarlılık
 
@@ -237,5 +235,3 @@ Ousterhout, J., & Martin, R. C. (2025). *A philosophy of software design vs Clea
 Parnas, D. L. (1972). On the criteria to be used in decomposing systems into modules. *Communications of the ACM, 15*(12), 1053-1058. https://doi.org/10.1145/361598.361623
 - Alınan: her modülün bir tasarım kararını saklaması (§3, §4 S satırı).
 
-Reynolds, G. (2019). *Presentation Zen: Simple ideas on presentation design and delivery* (3. baskı). Pearson.
-- Alınan: kanso, eleme yoluyla ulaşılan sadelik, "en az araçla en büyük etki" (başlık notu).

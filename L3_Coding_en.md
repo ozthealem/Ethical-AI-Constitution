@@ -108,7 +108,7 @@ When commenting, check (Ousterhout, 2018, Ch. 13, 16):
 - Does an inner comment say what a block does and why it exists, not how it works line by line?
 - If the reason for a bug fix is only in the commit message, write it in the code too.
 - Is the same explanation in two places? Keep one and point to it from the other.
-- If a decision affecting several modules has no natural place in the code, write it under a heading in the repo's `docs/designNotes.md`. Put a short pointer in the related code: "See design notes: <heading>" (Ousterhout, 2018, Ch. 13.7).
+- If a decision affecting several modules has no natural place in the code, write it under a heading in the repo's `docs/designNotes.md`. Put a short pointer in the related code: `See design notes: <heading>` (Ousterhout, 2018, Ch. 13.7).
 
 ## 7. Consistency
 

@@ -2,7 +2,7 @@ This repository contains the **Ethical AI Constitution**: A human-first framewor
 
 - **L1 (Ethical AI Constitution):** [ English ](L1_Ethical_AI_Constitution_en.md) | [ Türkçe ](L1_Ethical_AI_Constitution_tr.md) 
 - **L2 (Master Prompt Template):** [ English ](L2_Master_Prompt_Template_en.md) | [ Türkçe ](L2_Master_Prompt_Template_tr.md)
-- **L3 (Coding Guidelines):** [ English: Kanso Coding ](L3_Coding_en.md) | [ Türkçe: Kanso Kodlama ](L3_Coding_tr.md)
+- **L3 (Coding Guidelines):** [ English: Kanso Coding ](L3_Coding_en.md) | [ Türkçe: Zarif Kodlama ](L3_Coding_tr.md)
 
 ---
 ## Foundational Principles
@@ -12,7 +12,7 @@ The **Ethical AI Constitution** defines non-negotiable principles that govern ho
 - **Brain-AI-Brain (BaiB):** Human intent initiates, AI executes, and human judgment closes the loop. [3]
 - **Transparency Mandate:** AI is obligated to report root causes for errors or hallucinations.
 
-## Operational Architecture: The Layered System
+## Operational Architecture: The Multi-Layered System
 To achieve maximum efficiency and sovereignty, this framework operates on a layered structure. Each layer narrows the one before it. On conflict, the lower number wins (L1 > L2 > L3 > L4 > L5): a higher layer can decide how a principle is applied, never change the principle itself.
 1. **Layer 1: The Constitution (Universal, fixed):** The only layer that never changes with the user or the task. It contains non-negotiable ethical values, sovereignty protocols (BaiB), and cognitive debt prevention rules. It defines the principles and boundaries of the AI. It is public, universal, and contains no personal data.
 2. **Layer 2: The Master Prompt (Personal):** Your personal working context: who you are, your tools, your limits. Use the public template files in this repo to create your own private version (kept locally).
@@ -23,7 +23,7 @@ To achieve maximum efficiency and sovereignty, this framework operates on a laye
 By combining these layers, you transform a generic AI into a high-performance, specialized AI partner (friend, worker, peer, teacher, etc.) that respects your cognitive boundaries while mastering your technical environment.
 
 ## About the Name "Kanso Coding"
-Kanso (簡素) is one of the principles of Zen aesthetics: simplicity reached by elimination, "the achievement of maximum effect with minimum means" [4]. It names a single quality, not the whole Zen tradition, which is also why the guidelines are not called "Zen coding". The coding guidelines follow the same idea: complexity is removed rather than hidden, so that the code gets its beauty from its simplicity. "Kanso Coding" is the name given to these guidelines; it is not an established software school. The Turkish edition is titled *Kanso Kodlama*. The rules are drawn mainly from John Ousterhout's *A Philosophy of Software Design*, with every source cited in the file.
+Kanso (簡素) is one of the principles of Zen aesthetics: simplicity reached by elimination, "the achievement of maximum effect with minimum means" [4]. It names a single quality, not the whole Zen tradition, which is also why the guidelines are not called "Zen coding". The coding guidelines follow the same idea: complexity is removed rather than hidden, so that the code gets its beauty from its simplicity. "Kanso Coding" is the name given to these guidelines; it is not an established software school. The Turkish edition is titled *Zarif Kodlama* (elegant coding), since the idea needs no borrowed word in Turkish. The rules are drawn mainly from John Ousterhout's *A Philosophy of Software Design*, with every source cited in the file.
 
 **Preparation note:** The L3 guidelines were drafted by the author with the help of an AI tool, with every step reviewed and approved by the author. An AI tool is not a source: every principle in the files is credited to the human authors who wrote it.
 
