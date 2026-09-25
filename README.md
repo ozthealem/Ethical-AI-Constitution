@@ -16,6 +16,9 @@ The **Ethical AI Constitution** defines non-negotiable principles that govern ho
 To achieve maximum efficiency and sovereignty, this framework operates on a layered structure. Each layer narrows the one before it. On conflict, the lower number wins (L1 > L2 > L3 > L4 > L5): a higher layer can decide how a principle is applied, never change the principle itself.
 1. **Layer 1: The Constitution (Universal, fixed):** The only layer that never changes with the user or the task. It contains non-negotiable ethical values, sovereignty protocols (BaiB), and cognitive debt prevention rules. It defines the principles and boundaries of the AI. It is public, universal, and contains no personal data.
 2. **Layer 2: The Master Prompt (Personal):** Your personal working context: who you are, your tools, your limits. Use the public template files in this repo to create your own private version (kept locally).
+
+*L1 and L2 work in any AI interface, including a plain chat window. L3 and the layers after it are written for folder-based AI: tools that work inside a project folder, read and edit files, run commands and check their own work (often called coding agents). In a chat window, L3 can only act as an advisor on the code you paste; it cannot see the project, pick the right L4, or build and verify.*
+
 3. **Layer 3: Task Guidelines (Specific work):** Working rules for one kind of work. The first one is for coding: *Kanso Coding*.
 4. **Layer 4: Branch Guidelines (A branch of that work):** Rules for one branch of the L3 work, such as an engine or a language (Unreal, Unity, C, Python). Not published yet.
 5. **Layer 5: Project Notes (Local only):** Commands, paths and design notes of a single project. They stay in your own copy and are never published.
@@ -49,14 +52,13 @@ This framework emerged from a PhD research environment and private studio workfl
 
 ## Citation
 If you use this framework in your research, studio, or projects, please cite it using the information in the `CITATION.cff` file or as follows:
-- Altunoglu, O. S. (2026). _Ethical AI Constitution: A Framework for Human Sovereignty (Version 3.0.0)_. [Computer software]. https://doi.org/10.5281/zenodo.18685627
+- Altunoglu, O. S. (2026). _Ethical AI Constitution: A Framework for Human Sovereignty (Version 3.0.1)_. [Computer software]. https://doi.org/10.5281/zenodo.18685627
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18685627.svg)](https://doi.org/10.5281/zenodo.18685627)
 ## References
 1. Asimov, I. (1950). *I, Robot*. Gnome Press. (Three Laws of Robotics).
 2. Kosmyna, N., et al. (2024). _Your Brain on ChatGPT: Accumulation of Cognitive Debt when Using an AI Assistant for Essay Writing Task._ MIT Media Lab.
 3. Giray, L. (2025). _When using AI in scientific research: Start with human, end with human_. **TechTrends**. [https://doi.org/10.1007/s11528-025-01132-7](https://doi.org/10.1007/s11528-025-01132-7)
 4. Reynolds, G. (2019). _Presentation Zen: Simple ideas on presentation design and delivery_ (3rd ed.). Pearson.
-
 
 ## License
 This work is released under **CC0 1.0 Universal**. 

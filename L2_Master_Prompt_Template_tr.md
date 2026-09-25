@@ -1,6 +1,6 @@
 ---
 title: Master Prompt Şablonu (L2)
-version: 3.0.0
+version: 3.0.1
 lang: tr
 doi: 10.5281/zenodo.18685627
 ---

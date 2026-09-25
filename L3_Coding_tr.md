@@ -1,11 +1,13 @@
 ---
-version: "3.0.0"
+version: "3.0.1"
 date: 2026-09-25
 lang: tr
 ---
 # Zarif Kodlama: L3 Kodlama Yönergeleri
 
-Kodlama yapan YZ ajanı (bu metinde code.ai) için çalışma talimatı. Her kural bir durum ve o durumda yapılacak işi söyler.
+Kodlama yapan YZ için çalışma talimatı. Her kural bir durum ve o durumda yapılacak işi söyler.
+
+L3 klasör bazlı YZ'ler içindir: proje klasöründe dosya okuyan ve düzenleyen, komut çalıştıran, kendi işini kontrol eden YZ araçları. Sohbet penceresinde yalnız yapıştırılan kod üzerinde danışman olabilir.
 
 Katmanlar: L1 ve L2 her zaman geçerlidir. Bu dosya **L3**'tür, her yazılım işinde okunur. İşin bir alt koluna (Unreal, Unity, C, Python ...) özgü kurallar **L4** dosyalarında durur. Projeye özgü komut ve notlar **L5**'tir, kullanıcının kendi kopyasında durur. Çelişkide küçük numaralı katman kazanır (L1 > L2 > L3 > L4 > L5): üst numaralı katman alttakinin ilkelerini değiştiremez, yalnız nasıl uygulanacağını belirler. İsim, biçim ve dosya düzeni gibi uygulama ayrıntılarında L4'ün kuralına uy.
 
@@ -29,7 +31,7 @@ Bu dosyayı kullanıcının onayı olmadan değiştirme. Aynı hatayı iki kez y
 
 ## 1. Hakem soru
 
-Her tasarım kararında sor: **Bu değişiklikten sonra, hiçbir şey hatırlamayan biri (bir sonraki seanstaki code.ai dahil) bu kodda bir şeyi değiştirmek isterse, kaç dosyayı açıp okumak zorunda kalır?** Sayı artıyorsa karar yanlış. Bu soru, Ousterhout'un (2018, Böl. 2) karmaşıklık tanımının bu projeye uyarlanmış halidir.
+Her tasarım kararında sor: **Bu değişiklikten sonra, hiçbir şey hatırlamayan biri (bir sonraki seanstaki YZ dahil) bu kodda bir şeyi değiştirmek isterse, kaç dosyayı açıp okumak zorunda kalır?** Sayı artıyorsa karar yanlış. Bu soru, Ousterhout'un (2018, Böl. 2) karmaşıklık tanımının bu projeye uyarlanmış halidir.
 
 Örnek: Hasar hesabı her düşman türünde ayrı ayrı yazılırsa, hesaptaki bir hata için bütün düşman dosyaları açılır, biri unutulur. Hesap tek bir sistemde durur ve düşmanlar yalnız ona sorarsa, tek dosya açılır. Aşağıdaki kurallar bu sorunun sık görülen cevaplarıdır. Bir kural bu soruyla çelişirse soru kazanır.
 
@@ -143,6 +145,7 @@ L1, L2 ve kullanıcının kendi ajan ayarları geçerlidir, burada tekrar edilme
 - Bitiş ölçütünü kontrol et: derle, çalıştır, test et. Kanıtı göster (komut ve çıktısı). Yapamadığın adımı "yapılmadı" diye açıkça bildir (Anthropic, t.y.).
 - 10. bölümdeki listeyi değiştirdiğin kod için tek tek sor.
 - Commit ve push yalnız istenince.
+- Push'tan önce yalnız son hali değil, gönderilecek bütün commit'leri (`git log origin/main..HEAD -p`) sızıntıya karşı tara. Kişisel bir şey varsa push'tan önce o commit'i düzelt.
 - Raporu kısa ver: ne değişti, neyi doğruladın, neyi doğrulayamadın, ne öneriyorsun.
 
 ## 10. Bitirmeden önce kontrol listesi
@@ -173,7 +176,7 @@ APA 7 biçimindedir. Her kaynağın altında bu dosyaya ondan alınan fikir ve y
 Acton, M. (2014, Eylül). *Data-oriented design and C++* [Konferans sunumu]. CppCon 2014, Bellevue, WA, ABD.
 - Alınan: her karede çalışan kodda veriyi önce düşünmek (§8).
 
-Altunoglu, O. S. (2026). *Ethical AI constitution: A framework for human sovereignty and cognitive autonomy* (Sürüm 3.0.0). Zenodo. https://doi.org/10.5281/zenodo.18685627
+Altunoglu, O. S. (2026). *Ethical AI constitution: A framework for human sovereignty and cognitive autonomy* (Sürüm 3.0.1). Zenodo. https://doi.org/10.5281/zenodo.18685627
 - Rolü: L1 katmanı (§0).
 
 Anthropic. (t.y.). *Best practices for Claude Code* [Claude Code belgeleri]. https://code.claude.com/docs/en/best-practices

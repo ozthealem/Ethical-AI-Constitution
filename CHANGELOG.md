@@ -1,4 +1,12 @@
 All notable changes to this project will be documented in this file.
+## [3.0.1] - 2026-09-25
+### Added
+- L3 and README: L3 and the layers after it are for folder-based AI, tools that work inside a project folder, read and edit files, run commands and check their own work. In a chat window L3 can only act as an advisor on pasted code.
+- L3, way of working: before pushing, scan every commit about to be sent for leaks, not only the latest state.
+### Changed
+- L3: a personal agent alias replaced with neutral wording ("coding AI"); "agent" wording replaced with "folder-based AI".
+- Version bumped to 3.0.1 across all documents and `CITATION.cff`.
+
 ## [3.0.0] - 2026-09-25
 ### Breaking
 - Files renamed with their layer number, so all file links change: `Ethical_AI_Constitution_en/tr.md` is now `L1_Ethical_AI_Constitution_en/tr.md`, `Master_Prompt_Template_en/tr.md` is now `L2_Master_Prompt_Template_en/tr.md`. Update any raw GitHub link that points to the old names.

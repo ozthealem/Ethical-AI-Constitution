@@ -1,5 +1,5 @@
 ---
-version: "3.0.0"
+version: "3.0.1"
 date: 2026-09-25
 lang: en
 ---
@@ -7,7 +7,9 @@ lang: en
 
 Kanso (簡素) is the Japanese aesthetic of simplicity reached by elimination: the maximum effect with the minimum means (Reynolds, 2019). "Kanso Coding" is the name given to these guidelines; it is not an established software school.
 
-Working instructions for an AI coding agent (called code.ai in this text). Each rule names a situation and the action to take in it.
+Working instructions for a coding AI. Each rule names a situation and the action to take in it.
+
+L3 is for folder-based AI: AI tools that read and edit files in a project folder, run commands and check their own work (often called coding agents). In a chat window it can only act as an advisor on the code you paste.
 
 Layers: L1 and L2 always apply. This file is **L3** and is read for every software task. Rules specific to a branch of the work (Unreal, Unity, C, Python ...) live in **L4** files. Project-specific commands and notes are **L5** and live in the user's own copy. On conflict the lower number wins (L1 > L2 > L3 > L4 > L5): a higher layer cannot change the principles of a lower one, it only decides how they are applied. For implementation details such as naming, formatting and file layout, follow the L4 rules.
 
@@ -31,7 +33,7 @@ Do not change this file without the user's approval. If you notice you made the 
 
 ## 1. The referee question
 
-Ask at every design decision: **After this change, if someone who remembers nothing (including code.ai in the next session) wants to change something in this code, how many files must they open and read?** If the number goes up, the decision is wrong. This question is Ousterhout's (2018, Ch. 2) definition of complexity adapted to this setting.
+Ask at every design decision: **After this change, if someone who remembers nothing (including the AI in the next session) wants to change something in this code, how many files must they open and read?** If the number goes up, the decision is wrong. This question is Ousterhout's (2018, Ch. 2) definition of complexity adapted to this setting.
 
 Example: if the damage calculation is written separately in every enemy type, a bug in it means opening every enemy file, and one gets forgotten. If the calculation lives in one system and enemies only ask it, one file is opened. The rules below are common answers to this question. If a rule contradicts the question, the question wins.
 
@@ -145,6 +147,7 @@ L1, L2 and the user's own agent settings apply and are not repeated here.
 - Check the finish criterion: build, run, test. Show the evidence (the command and its output). Report any step you could not do as "not done" (Anthropic, n.d.).
 - Go through the list in section 10 for the code you changed.
 - Commit and push only when asked.
+- Before pushing, scan every commit about to be sent (`git log origin/main..HEAD -p`) for leaks, not only the latest state. If something personal is there, fix that commit before pushing.
 - Keep the report short: what changed, what you verified, what you could not verify, what you propose.
 
 ## 10. Checklist before finishing
@@ -175,7 +178,7 @@ APA 7. Under each source, the idea taken from it and where it is used in this fi
 Acton, M. (2014, September). *Data-oriented design and C++* [Conference presentation]. CppCon 2014, Bellevue, WA, United States.
 - Taken: in code that runs every frame, think about the data first (§8).
 
-Altunoglu, O. S. (2026). *Ethical AI constitution: A framework for human sovereignty and cognitive autonomy* (Version 3.0.0). Zenodo. https://doi.org/10.5281/zenodo.18685627
+Altunoglu, O. S. (2026). *Ethical AI constitution: A framework for human sovereignty and cognitive autonomy* (Version 3.0.1). Zenodo. https://doi.org/10.5281/zenodo.18685627
 - Role: the L1 layer (§0).
 
 Anthropic. (n.d.). *Best practices for Claude Code* [Claude Code documentation]. https://code.claude.com/docs/en/best-practices

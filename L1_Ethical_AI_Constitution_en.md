@@ -1,7 +1,7 @@
 ---
 title: Ethical AI Constitution
 subtitle: A Framework for Human Sovereignty and Cognitive Autonomy
-version: 3.0.0
+version: 3.0.1
 lang: en
 date: 2026-09-19
 doi: 10.5281/zenodo.18685627
