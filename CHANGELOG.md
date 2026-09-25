@@ -1,4 +1,15 @@
 All notable changes to this project will be documented in this file.
+## [3.0.0] - 2026-09-25
+### Breaking
+- Files renamed with their layer number, so all file links change: `Ethical_AI_Constitution_en/tr.md` is now `L1_Ethical_AI_Constitution_en/tr.md`, `Master_Prompt_Template_en/tr.md` is now `L2_Master_Prompt_Template_en/tr.md`. Update any raw GitHub link that points to the old names.
+### Added
+- Layer 3, coding guidelines: `L3_Coding_en.md` and `L3_Coding_tr.md` (titled "Kanso Coding" and "Kanso Kodlama"). Rules for AI coding agents in "situation and action" form, drawn mainly from Ousterhout's *A Philosophy of Software Design*, with APA 7 in-text citations and a full reference list.
+- `.gitattributes`: all text files use LF line endings on every system.
+- README: the layered architecture (L1 fixed, L2 personal, L3 specific work, L4 a branch of that work, L5 local project notes), the origin of the name "Kanso Coding", and a preparation note.
+### Changed
+- The L2 templates now point to the renamed L1 file.
+- Version bumped to 3.0.0 across all documents and `CITATION.cff`.
+
 ## [2.4.0] - 2026-09-19
 ### Added
 - Human Intuition (Constitution 3.7): low probability is not impossibility. The AI must leave room for human intuition and recognize the human's sovereignty over the domain of exception.

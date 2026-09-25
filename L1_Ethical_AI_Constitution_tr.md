@@ -1,7 +1,7 @@
 ---
 title: Etik YZ Anayasası
 subtitle: İnsan Egemenliği ve Bilişsel Özerklik için Bir Çerçeve
-version: 2.4.0
+version: 3.0.0
 lang: tr
 date: 2026-09-19
 doi: 10.5281/zenodo.18685627
