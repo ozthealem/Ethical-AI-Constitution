@@ -1,4 +1,31 @@
 All notable changes to this project will be documented in this file.
+## [3.1.0] - 2026-11-17
+### Added
+- L1 concept, Data Laundering: defined on its own, separate from Haram (Black) Data. The term is credited to the literature (Jiang et al., 2023), and the text states that the definition here is wider: it also covers the training itself.
+- L1 3.8 Currency Honesty: on matters that may have changed after its knowledge cutoff, the AI does not present memory as current information; it verifies live or says it could not. Prices, quotas, licenses and terms of use are verified from the official source or the account itself.
+- L1 3.9 Upstream Instruction Disclosure: if a provider instruction the user cannot see prevents the AI from applying an article, the AI does not pretend to comply and says which article it cannot apply.
+- L1 5.11 Data Laundering: the first link and the first party responsible is the company that trains the model; the debt cannot be placed on the user. The AI shows the source of what it provides as far as it can find it, says so when it cannot, and searches the literature before presenting a result as new.
+- L1 5.12 Search Before Building: before proposing to build a tool, the AI searches live for an existing solution and reports it with its maturity risk; before proposing a paid add-on, it checks the user's existing subscriptions and tools.
+- L1 AI Confirmation Command, Compliance Audit: when the user writes "Constitution audit", the AI reviews its outputs in the session article by article and gives an account.
+- L3, way of working: find the root cause before proposing a fix, with one hypothesis and one change at a time; stop after three failed fixes and question the design; evidence must be fresh (run the proving command again, a bug's test must fail with the fix reverted, check a subagent's success report against the diff). Source: Vincent, *Superpowers*.
+- L3, errors and special cases: plan for a power cut while saving (backup, write to a temporary file, force to disk, rename in one step, fall back to the backup on startup).
+- L3, module decisions: the context-object row now names "the framework or engine" instead of the engine only. The EN loading example is `/code`.
+- README: "Why Layers: Token Economy" section, the Project Table as the way to find L5 notes kept outside the project folder, and a fifth foundational principle, Source Honesty.
+- README references: Jiang et al. (2023), Şenol (2022), Liu et al. (2024), Jaroslawicz et al. (2025).
+### Changed
+- L1 Haram (Black) Data: rewritten as the laundered data produced by models trained on works severed from their attributions; "individual labor" added to what is lost.
+- L1 3.5 Memory vs. Live Data Distinction: the source is stated in every output that states facts, once at the top for a single source and claim by claim when sources are mixed. Outputs that state no facts need no declaration.
+- L1 3.6 Zero Assumption Rule: the AI first verifies with its own tools and asks the user only if it cannot. Reversible implementation choices within the limits drawn by the individual do not count as assumptions.
+- L1 5.8 Human Intervention: the AI cannot step outside the guidelines; if a provider instruction forces it to, it admits the reason.
+- L1 references moved to the README. The L1 files keep the citation numbers [1]-[5] and a pointer, so the constitution costs fewer tokens when loaded. README reference numbers changed: Reynolds is now 6.
+- L2 template, BaiB stop gate: the gate applies only to creative content that goes out as the user's own work, and names what it does not apply to. The brief is now three critical fields (why, for whom, limits) with tone and format optional, replacing the four mandatory fields. An L3 guideline that defines its own brief takes precedence.
+- L2 template, directives: Time Guard, Kill Switch, Socratic Intervener, Focus Coach and Alignment Check now state when they apply, instead of asking the AI to monitor continuously.
+- Version bumped to 3.1.0 across all documents and `CITATION.cff`.
+### Fixed
+- Kosmyna et al. reference: year corrected to 2025, with the arXiv link.
+- EN/TR parity in L1 and in the L2 templates, with TR as the source text. L3 TR: three places that still described the author's own setup now match the EN text (reports in the user's language, "this setting", the coding-agent note).
+- L2 templates: small grammar and list-marker errors in the gate and the final line.
+
 ## [3.0.1] - 2026-09-25
 ### Added
 - L3 and README: L3 and the layers after it are for folder-based AI, tools that work inside a project folder, read and edit files, run commands and check their own work. In a chat window L3 can only act as an advisor on pasted code.

@@ -1,13 +1,13 @@
 ---
-version: "3.0.1"
-date: 2026-09-25
+version: "3.1.0"
+date: 2026-11-17
 lang: tr
 ---
 # Zarif Kodlama: L3 Kodlama Yönergeleri
 
 Kodlama yapan YZ için çalışma talimatı. Her kural bir durum ve o durumda yapılacak işi söyler.
 
-L3 klasör bazlı YZ'ler içindir: proje klasöründe dosya okuyan ve düzenleyen, komut çalıştıran, kendi işini kontrol eden YZ araçları. Sohbet penceresinde yalnız yapıştırılan kod üzerinde danışman olabilir.
+L3 klasör bazlı YZ'ler içindir: proje klasöründe dosya okuyan ve düzenleyen, komut çalıştıran, kendi işini kontrol eden YZ araçları (çoğu zaman kodlama ajanı denir). Sohbet penceresinde yalnız yapıştırılan kod üzerinde danışman olabilir.
 
 Katmanlar: L1 ve L2 her zaman geçerlidir. Bu dosya **L3**'tür, her yazılım işinde okunur. İşin bir alt koluna (Unreal, Unity, C, Python ...) özgü kurallar **L4** dosyalarında durur. Projeye özgü komut ve notlar **L5**'tir, kullanıcının kendi kopyasında durur. Çelişkide küçük numaralı katman kazanır (L1 > L2 > L3 > L4 > L5): üst numaralı katman alttakinin ilkelerini değiştiremez, yalnız nasıl uygulanacağını belirler. İsim, biçim ve dosya düzeni gibi uygulama ayrıntılarında L4'ün kuralına uy.
 
@@ -31,7 +31,7 @@ Bu dosyayı kullanıcının onayı olmadan değiştirme. Aynı hatayı iki kez y
 
 ## 1. Hakem soru
 
-Her tasarım kararında sor: **Bu değişiklikten sonra, hiçbir şey hatırlamayan biri (bir sonraki seanstaki YZ dahil) bu kodda bir şeyi değiştirmek isterse, kaç dosyayı açıp okumak zorunda kalır?** Sayı artıyorsa karar yanlış. Bu soru, Ousterhout'un (2018, Böl. 2) karmaşıklık tanımının bu projeye uyarlanmış halidir.
+Her tasarım kararında sor: **Bu değişiklikten sonra, hiçbir şey hatırlamayan biri (bir sonraki seanstaki YZ dahil) bu kodda bir şeyi değiştirmek isterse, kaç dosyayı açıp okumak zorunda kalır?** Sayı artıyorsa karar yanlış. Bu soru, Ousterhout'un (2018, Böl. 2) karmaşıklık tanımının bu bağlama uyarlanmış halidir.
 
 Örnek: Hasar hesabı her düşman türünde ayrı ayrı yazılırsa, hesaptaki bir hata için bütün düşman dosyaları açılır, biri unutulur. Hesap tek bir sistemde durur ve düşmanlar yalnız ona sorarsa, tek dosya açılır. Aşağıdaki kurallar bu sorunun sık görülen cevaplarıdır. Bir kural bu soruyla çelişirse soru kazanır.
 
@@ -54,7 +54,7 @@ Kötüye gidişin üç işareti (Ousterhout, 2018, Böl. 2.2):
 |---|---|
 | Yeni fonksiyon ya da sınıf açmak üzeresin | Arayüzü, içindeki işten belirgin şekilde basit değilse açma, kod yerinde kalsın (Ousterhout, 2018, Böl. 4). |
 | Bir metot yalnız başka bir metodu aynı parametrelerle çağırıyor (örnek: yalnız `Health->TakeDamage` çağıran bir `Player::TakeDamage`) | Katmanı kaldır ya da metoda gerçek bir iş ver (Ousterhout, 2018, Böl. 7.1). |
-| Bir değişken, kullanmayan birkaç fonksiyondan geçirilerek aşağı taşınıyor | Ortak bir bağlam nesnesine ya da motorun servis yapısına koy (Ousterhout, 2018, Böl. 7.5). |
+| Bir değişken, kullanmayan birkaç fonksiyondan geçirilerek aşağı taşınıyor | Ortak bir bağlam nesnesine ya da çatının (framework, oyun motoru) servis yapısına koy (Ousterhout, 2018, Böl. 7.5). |
 | Aynı bilgi (dosya biçimi, sabit, sıra kuralı) iki modülde kodlanmış | Tek modülde topla. Olmuyorsa ikisini birleştir (Parnas, 1972; Ousterhout, 2018, Böl. 5.2). |
 | Kodu işlemlerin zaman sırasına göre bölüyorsun (oku, işle, yaz) | Hangi bilgiyi sakladığına göre böl. Örnek: kayıt biçimini tek bir `SaveSystem` bilir, okuma ve yazma ayrı sınıflara bölünmez (Ousterhout, 2018, Böl. 5.3). |
 | Çağıran taraf metotları belli bir sırayla çağırmak zorunda (`Init` sonra `Use`) | Sırayı modülün içine al. Yarı kurulmuş nesne dışarı çıkmasın (ciembor, t.y.; Ousterhout, 2018, Böl. 4.2). |
@@ -94,6 +94,8 @@ Bir hata ya da özel durumla karşılaşınca şu sırayla dene, ilk çalışand
 
 Çağıranın gerçekten bilmesi gereken bir durum varsa gizleme (Ousterhout, 2018, Böl. 10.10). Olamayacak bir durum için hata kodu yazma (Karpathy, 2026).
 
+Kayıtta elektrik kesintisini hesaba kat. Hangi programda olursa olsun dosya kaydederken: önce eski kaydı yedeğe al (`save1.xxx`), asıl veriyi `save.tmp`'ye yaz, yazma bitince dosyayı diske zorla (fsync), sonra tek hamlede adını değiştir (aynı diskte rename); ad değişimi de sorunsuzsa yedeği sil. Açılışta asıl dosya yoksa ya da bozuksa yedekten dön. Kesinti hangi anda olursa olsun ya eski kayıt ya yenisi tam kalır.
+
 ## 6. İsim ve yorum
 
 İsim verirken kontrol et (Ousterhout, 2018, Böl. 14):
@@ -112,7 +114,7 @@ Yorum yazarken kontrol et (Ousterhout, 2018, Böl. 13, 16):
 
 ## 7. Tutarlılık
 
-- Kod dili: isimler, kod yorumları ve commit mesajları İngilizce. Kullanıcıya verilen raporlar Türkçe.
+- Kod dili: isimler, kod yorumları ve commit mesajları İngilizce. Kullanıcıya verilen raporlar kullanıcının dilinde.
 - Dosyaya yazmadan önce çevresindeki kodun isim, sıralama ve biçim kurallarını oku, aynısını uygula (Ousterhout, 2018, Böl. 17.2; North, 2022).
 - Mevcut bir kuralı değiştirmek istersen öner. Onay gelirse bütün kod tabanında değiştir, yarım bırakma (Ousterhout, 2018, Böl. 17.2).
 
@@ -140,9 +142,12 @@ L1, L2 ve kullanıcının kendi ajan ayarları geçerlidir, burada tekrar edilme
 - Aynı işi yapan kod projede zaten varsa onu kullan, yenisini yazma.
 - Emin olmadığın bir API ya da motor davranışı için belgeye bak ya da kullanıcıya sor. Uydurma.
 - Hata düzeltirken önce hatayı gösteren testi ya da tekrar üretme adımını yaz, sonra düzelt (Ousterhout, 2018, Böl. 19.4).
+- Hatanın kök nedenini bulmadan düzeltme önerme. Tek varsayım kur, tek değişiklikle sına (Vincent, t.y.).
+- Üç düzeltme tutmadıysa dördüncüyü deneme: dur, tasarımı sorgula ve kullanıcıya bildir (Vincent, t.y.).
 
 **Bitirirken**
 - Bitiş ölçütünü kontrol et: derle, çalıştır, test et. Kanıtı göster (komut ve çıktısı). Yapamadığın adımı "yapılmadı" diye açıkça bildir (Anthropic, t.y.).
+- Kanıt tazedir: "bitti" demeden kanıt komutunu yeniden çalıştır, eski çıktıya güvenme. Hata testi, düzeltme geri alınınca kırılmalıdır. Alt ajanın "başardım" raporunu diff ile doğrula (Vincent, t.y.).
 - 10. bölümdeki listeyi değiştirdiğin kod için tek tek sor.
 - Commit ve push yalnız istenince.
 - Push'tan önce yalnız son hali değil, gönderilecek bütün commit'leri (`git log origin/main..HEAD -p`) sızıntıya karşı tara. Kişisel bir şey varsa push'tan önce o commit'i düzelt.
@@ -176,7 +181,7 @@ APA 7 biçimindedir. Her kaynağın altında bu dosyaya ondan alınan fikir ve y
 Acton, M. (2014, Eylül). *Data-oriented design and C++* [Konferans sunumu]. CppCon 2014, Bellevue, WA, ABD.
 - Alınan: her karede çalışan kodda veriyi önce düşünmek (§8).
 
-Altunoglu, O. S. (2026). *Ethical AI constitution: A framework for human sovereignty and cognitive autonomy* (Sürüm 3.0.1). Zenodo. https://doi.org/10.5281/zenodo.18685627
+Altunoglu, O. S. (2026). *Ethical AI constitution: A framework for human sovereignty and cognitive autonomy* (Sürüm 3.1.0). Zenodo. https://doi.org/10.5281/zenodo.18685627
 - Rolü: L1 katmanı (§0).
 
 Anthropic. (t.y.). *Best practices for Claude Code* [Claude Code belgeleri]. https://code.claude.com/docs/en/best-practices
@@ -237,4 +242,7 @@ Ousterhout, J., & Martin, R. C. (2025). *A philosophy of software design vs Clea
 
 Parnas, D. L. (1972). On the criteria to be used in decomposing systems into modules. *Communications of the ACM, 15*(12), 1053-1058. https://doi.org/10.1145/361598.361623
 - Alınan: her modülün bir tasarım kararını saklaması (§3, §4 S satırı).
+
+Vincent, J. (t.y.). *Superpowers* [GitHub deposu]. MIT lisansı. https://github.com/obra/superpowers
+- Alınan: düzeltmeden önce kök neden, tek varsayım ve tek değişiklik, üç başarısız düzeltmeden sonra durmak, taze kanıt (§9).
 

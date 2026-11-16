@@ -1,6 +1,6 @@
 ---
-version: "3.0.1"
-date: 2026-09-25
+version: "3.1.0"
+date: 2026-11-17
 lang: en
 ---
 # Kanso Coding: L3 Coding Guidelines
@@ -17,7 +17,7 @@ Citation style: in-text citations follow APA 7. Rules without a citation are dec
 
 ## 0. Loading
 
-This file is loaded by a command (for example `/kodla`). In order:
+This file is loaded by a command (for example `/code`). In order:
 
 1. Read L1: the Ethical AI Constitution (Altunoglu, 2026).
 2. Read L2: the user's Master Prompt. Write only "L1 and L2 loaded."
@@ -56,7 +56,7 @@ Three signs that things are getting worse (Ousterhout, 2018, Ch. 2.2):
 |---|---|
 | You are about to open a new function or class | If its interface is not clearly simpler than the work inside, do not open it; leave the code where it is (Ousterhout, 2018, Ch. 4). |
 | A method only calls another method with the same parameters (example: a `Player::TakeDamage` that only calls `Health->TakeDamage`) | Remove the layer or give the method real work (Ousterhout, 2018, Ch. 7.1). |
-| A variable is passed down through several functions that do not use it | Put it in a shared context object or the engine's service structure (Ousterhout, 2018, Ch. 7.5). |
+| A variable is passed down through several functions that do not use it | Put it in a shared context object or the service structure of the framework or engine (Ousterhout, 2018, Ch. 7.5). |
 | The same knowledge (file format, constant, ordering rule) is coded in two modules | Gather it in one module. If that fails, merge the two (Parnas, 1972; Ousterhout, 2018, Ch. 5.2). |
 | You are splitting code by the time order of operations (read, process, write) | Split by what information each part hides. Example: one `SaveSystem` knows the save format; reading and writing are not split into separate classes (Ousterhout, 2018, Ch. 5.3). |
 | The caller must call methods in a fixed order (`Init` then `Use`) | Move the ordering inside the module. Do not let half-built objects out (ciembor, n.d.; Ousterhout, 2018, Ch. 4.2). |
@@ -95,6 +95,8 @@ When you meet an error or special case, try in this order and stop at the first 
 4. **Crash.** In a rare, unrecoverable case, stop with a clear message.
 
 Do not hide a condition the caller really needs to know (Ousterhout, 2018, Ch. 10.10). Do not write error handling for impossible cases (Karpathy, 2026).
+
+Plan for a power cut while saving. Whatever the program, when saving a file: first copy the old save to a backup (`save1.xxx`), write the new data to `save.tmp`, force the file to disk when the write ends (fsync), then rename it in a single step (rename on the same disk); if the rename also succeeds, delete the backup. On startup, if the main file is missing or corrupt, fall back to the backup. Whenever the cut happens, either the old save or the new one stays whole.
 
 ## 6. Names and comments
 
@@ -142,9 +144,12 @@ L1, L2 and the user's own agent settings apply and are not repeated here.
 - If code that does the same job already exists in the project, use it; do not write a new one.
 - For an API or engine behavior you are unsure of, check the documentation or ask the user. Do not make it up.
 - When fixing a bug, first write the test or reproduction step that shows the bug, then fix it (Ousterhout, 2018, Ch. 19.4).
+- Do not propose a fix before you have found the bug's root cause. Form one hypothesis and test it with one change (Vincent, n.d.).
+- If three fixes have failed, do not try a fourth: stop, question the design and tell the user (Vincent, n.d.).
 
 **When finishing**
 - Check the finish criterion: build, run, test. Show the evidence (the command and its output). Report any step you could not do as "not done" (Anthropic, n.d.).
+- Evidence is fresh: before saying "done", run the proving command again, do not rely on earlier output. A bug's test must fail when the fix is reverted. Verify a subagent's "success" report against the diff (Vincent, n.d.).
 - Go through the list in section 10 for the code you changed.
 - Commit and push only when asked.
 - Before pushing, scan every commit about to be sent (`git log origin/main..HEAD -p`) for leaks, not only the latest state. If something personal is there, fix that commit before pushing.
@@ -178,7 +183,7 @@ APA 7. Under each source, the idea taken from it and where it is used in this fi
 Acton, M. (2014, September). *Data-oriented design and C++* [Conference presentation]. CppCon 2014, Bellevue, WA, United States.
 - Taken: in code that runs every frame, think about the data first (§8).
 
-Altunoglu, O. S. (2026). *Ethical AI constitution: A framework for human sovereignty and cognitive autonomy* (Version 3.0.1). Zenodo. https://doi.org/10.5281/zenodo.18685627
+Altunoglu, O. S. (2026). *Ethical AI constitution: A framework for human sovereignty and cognitive autonomy* (Version 3.1.0). Zenodo. https://doi.org/10.5281/zenodo.18685627
 - Role: the L1 layer (§0).
 
 Anthropic. (n.d.). *Best practices for Claude Code* [Claude Code documentation]. https://code.claude.com/docs/en/best-practices
@@ -242,3 +247,6 @@ Parnas, D. L. (1972). On the criteria to be used in decomposing systems into mod
 
 Reynolds, G. (2019). *Presentation Zen: Simple ideas on presentation design and delivery* (3rd ed.). Pearson.
 - Taken: kanso as simplicity reached by elimination, "maximum effect with minimum means" (title note).
+
+Vincent, J. (n.d.). *Superpowers* [GitHub repository]. MIT License. https://github.com/obra/superpowers
+- Taken: root cause before any fix, one hypothesis and one change, stopping after three failed fixes, fresh evidence (§9).
